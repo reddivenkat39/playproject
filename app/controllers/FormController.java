@@ -22,6 +22,7 @@ public Result patientform(){
 	 JsonNode form=null;
 	DBObject dbobj =null;
 	try {
+		println("ho");
 		client = new MongoClient("localhost",27017);
 		  Morphia morphia = new Morphia();
 		  Datastore ds = morphia.createDatastore(client,"facebook1");
